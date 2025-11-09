@@ -14,10 +14,10 @@ export default function PricingPage() {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
-            Pricing
+            Tarifas
           </h1>
           <p className="text-xl text-gray-700">
-            Choose the plan that best fits your financial goals and needs.
+            Elige el plan que mejor se ajuste a tus objetivos y necesidades financieras.
           </p>
         </div>
 
@@ -30,18 +30,18 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-background-subtle p-8 rounded-lg">
             <h2 className="text-2xl font-semibold text-primary mb-4">
-              Need a Custom Solution?
+              ¿Necesitas una Solución Personalizada?
             </h2>
             <p className="text-gray-700 mb-6">
-              We understand that every financial situation is unique. If you need a
-              customized plan or have specific requirements, please don't hesitate to
-              reach out. We're here to create a solution that works for you.
+              Entendemos que cada situación financiera es única. Si necesitas un plan
+              personalizado o tienes requisitos específicos, no dudes en contactarnos.
+              Estamos aquí para crear una solución que funcione para ti.
             </p>
             <a
               href="/contact"
               className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-light transition-colors"
             >
-              Contact Us for Custom Pricing
+              Contáctame para Precios Personalizados
             </a>
           </div>
         </div>

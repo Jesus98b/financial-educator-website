@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/atoms/Button';
 import { Link } from '@/components/atoms/Link';
-import { SITE_CONFIG } from '@/lib/constants';
 
 /**
  * Hero section component for homepage

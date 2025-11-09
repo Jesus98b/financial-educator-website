@@ -8,6 +8,7 @@ export interface LinkProps {
   external?: boolean;
   className?: string;
   variant?: 'default' | 'underline';
+  onClick?: () => void;
 }
 
 /**
@@ -23,6 +24,7 @@ export const Link: React.FC<LinkProps> = ({
   external = false,
   className,
   variant = 'default',
+  onClick,
 }) => {
   const baseStyles = 'transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded';
 
@@ -38,6 +40,7 @@ export const Link: React.FC<LinkProps> = ({
         target="_blank"
         rel="noopener noreferrer"
         className={cn(baseStyles, variants[variant], className)}
+        onClick={onClick}
       >
         {children}
       </a>
@@ -45,7 +48,11 @@ export const Link: React.FC<LinkProps> = ({
   }
 
   return (
-    <NextLink href={href} className={cn(baseStyles, variants[variant], className)}>
+    <NextLink
+      href={href}
+      className={cn(baseStyles, variants[variant], className)}
+      onClick={onClick}
+    >
       {children}
     </NextLink>
   );
